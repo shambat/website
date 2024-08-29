@@ -3,68 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHAM First Hosting</title>
+    <title>Guidance on Cybersecurity in AI Technology</title>
     <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #000000;
-            --header-bg: #f0f0f0;
-        }
-
-        [data-theme="dark"] {
-            --bg-color: #121212;
-            --text-color: #ffffff;
-            --header-bg: #1f1f1f;
-        }
-
         body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
             font-family: Arial, sans-serif;
-            transition: background-color 0.3s, color 0.3s;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
         }
-
         header {
-            background-color: var(--header-bg);
-            padding: 10px;
+            background: #003366; /* Dark Blue */
+            color: #fff;
+            padding: 1rem 0;
             text-align: center;
-            transition: background-color 0.3s;
         }
-
-        button {
-            padding: 10px 20px;
-            margin-top: 20px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #004080; /* Medium Blue */
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #cce5ff; /* Light Blue */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .content {
+            padding: 2rem;
+            background: #fff;
+            margin-top: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #003366; /* Dark Blue */
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            margin: 1rem 0;
+            padding: 0 1.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #003366; /* Dark Blue */
+            color: #fff;
+            margin-top: 1rem;
+        }
+        footer a {
+            color: #cce5ff; /* Light Blue */
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to SHAM First Hosting</h1>
-        <button id="darkModeToggle">Toggle Dark Mode</button>
+        <h1>Guidance on Cybersecurity in AI Technology</h1>
     </header>
-    <main>
-        <section>
-            <p>Providing reliable hosting services tailored to your needs.</p>
-        </section>
-    </main>
-    <script>
-        const toggleButton = document.getElementById('darkModeToggle');
-        const currentTheme = localStorage.getItem('theme') || 'light';
 
-        if (currentTheme === 'dark') {
-            document.documentElement.setAttribute('data-theme', 'dark');
-        }
+    <nav>
+        <a href="#purpose">Purpose</a>
+        <a href="#objective">Objective</a>
+        <a href="#questions">Questions</a>
+        <a href="#future">Future</a>
+    </nav>
 
-        toggleButton.addEventListener('click', () => {
-            const theme = document.documentElement.getAttribute('data-theme');
-            const newTheme = theme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        });
-    </script>
+    <div class="container">
+        <div class="content" id="purpose">
+            <h2>Purpose</h2>
+            <p>We’re reaching out to seek your guidance on the pathway to follow and use cases of security in AI systems to pursue. Also, to know about current and future industry trends and how industry professionals navigate them.</p>
+            <p>If you could point us in the right direction or connect us with someone who can, that would be amazing.</p>
+        </div>
+
+        <div class="content" id="objective">
+            <h2>Objective</h2>
+            <ul>
+                <li>Embed Cybersecurity in AI systems at its core architecture to make secure AI products or features that will help business operations.</li>
+                <li>Explore both emerging technologies and their intersection.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="questions">
+            <h2>Questions</h2>
+            <p>(Consultative dialogue)</p>
+        </div>
+
+        <div class="content" id="future">
+            <h2>Future</h2>
+            <p>Recognizing the ongoing advancements in AI and Cybersecurity, our vision is to create solutions or products that embed cybersecurity at the heart of AI, ensuring security.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Proposed by:</p>
+        <p><a href="https://www.linkedin.com/in/ehtishamcyber/" target="_blank">Muhammad Ehtisham - BS Cyber Security</a></p>
+        <p><a href="https://www.linkedin.com/in/amaanawan-bsai/" target="_blank">Muhammad Amaan - BS Artificial Intelligence</a></p>
+    </footer>
 </body>
 </html>
