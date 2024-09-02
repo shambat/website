@@ -3,37 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Under Maintenance</title>
+    <title>Site Under Maintenance</title>
     <style>
         body {
-            background-color: #121212;
-            color: #f0f0f0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-        }
-        .container {
             text-align: center;
         }
         h1 {
             font-size: 3rem;
-            margin-bottom: 0.5rem;
-            color: #00ff99;
-            text-shadow: 0 0 10px #00ff99;
+            color: #00d4ff;
+            text-shadow: 0 0 15px #00d4ff;
+            margin: 0;
         }
         p {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             color: #cccccc;
+            margin: 10px 0;
+        }
+        .domain-name {
+            font-size: 1.5rem;
+            color: #ffcc00;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
         .spinner {
             border: 8px solid #333;
             border-radius: 50%;
-            border-top: 8px solid #00ff99;
-            width: 50px;
-            height: 50px;
+            border-top: 8px solid #00d4ff;
+            width: 60px;
+            height: 60px;
             animation: spin 1s linear infinite;
             margin: 20px auto;
         }
@@ -44,14 +49,11 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div>
+        <div class="domain-name">aixcys.co</div>
         <h1>Under Maintenance</h1>
-        <p>Our backend team is working hard to improve our website. We'll be back soon!</p>
+        <p>Our team is working hard to bring you a better experience. Please check back later.</p>
         <div class="spinner"></div>
     </div>
-    <script>
-        // Example JavaScript code (can be used for future functionality)
-        console.log('Website is under maintenance. Please check back later.');
-    </script>
 </body>
 </html>
